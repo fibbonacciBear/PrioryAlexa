@@ -11,11 +11,13 @@ gcal = Calendar.from_ical(g.read())
 count = 0
 for component in gcal.walk():
     if component.name == "VEVENT":
-        count += 1
         print("---------------------------------")
-        print(component.get('summary'))
-        print(component.get('dtstart').to_ical())
-        print(component.get('dtend').to_ical())
-        print(component.get('CATEGORIES').to_ical())
+        summary = component.get('summary')
+        pat = component.get('dtstart').to_ical()
+        pat_str = pat.decode("utf-8")
+        pat_str = pat_str[0:8]
+        pat_str = pat_str[0:4] + "-" + pat_str[4:6] + "-" + pat_str[6:]
+        print(pat_str, " ", summary)
+        # print(component.get('dtend').to_ical())
+        # print(component.get('CATEGORIES').to_ical())
 g.close()
-print(count)

@@ -1,0 +1,131 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "priory school",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "PrioryEventsIntent",
+          "slots": [
+            {
+              "name": "day",
+              "type": "AMAZON.DATE"
+            }
+          ],
+          "samples": [
+            "what is going on {day} ",
+            "what event do I have {day}",
+            "what events do I have {day}",
+            "what events are there {day}",
+            "what is happening {day}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "PrioryWeekIntent",
+          "slots": [],
+          "samples": [
+            "is this a C-week",
+            "is this a B-week ",
+            "is this an A-week",
+            "what week is this week",
+            "what type of week is this week",
+            "what kind of week is this week"
+          ]
+        },
+        {
+          "name": "PrioryDayOfEventIntent",
+          "slots": [
+            {
+              "name": "prioryEvent",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "retreat",
+                "ap testing",
+                "graduation",
+                "graduation day",
+                "mid winter break",
+                "spring break",
+                "last day of school",
+                "Memorial Day"
+              ]
+            }
+          ],
+          "samples": [
+            "When is {prioryEvent} happening",
+            "tell me the date when the {prioryEvent} is ",
+            "on which day is the {prioryEvent}",
+            "When does {prioryEvent} happen",
+            "What day is {prioryEvent}",
+            "When is {prioryEvent}",
+            "What day is the {prioryEvent}"
+          ]
+        },
+        {
+          "name": "PrioryRandomFactIntent",
+          "slots": [],
+          "samples": [
+            "give me a random fact about the school",
+            "can you tell me something interesting about the school",
+            "can you tell me something interesting about Priory",
+            "tell me something about the school",
+            "tell me something about Woodside Priory School",
+            "tell me something interesting",
+            "tell me something interesting about priory",
+            "give me a random fact about priory",
+            "tell me something about Priory",
+            "tell me a fact about Priory"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "PrioryDayOfEventIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "prioryEvent",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1427350380070.344052344261"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1427350380070.344052344261",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What event are you asking about"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "41"
+}

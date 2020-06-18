@@ -1,0 +1,54 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Alexa skill for Woodside Priory School",
+          "examplePhrases": [
+            "Alexa Open Priory School",
+            "What events do I have today",
+            "What week is this week"
+          ],
+          "keywords": [
+            "Woodside",
+            "Priory",
+            "School"
+          ],
+          "name": "Priory School",
+          "description": "This skill is for students at Woodside Priory School. The user can ask about upcoming Priory school events.",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "updatesDescription": "Added a new feature that allows the user to learn about Priory School by providing a random fact when asked.\nAdded a new feature to find the date given a specific event.",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Ask Priory School when is open house\nAsk Priory School what is going on today\nLaunch Priory School -- Tell me something about Priory School",
+      "category": "SCHOOLS",
+      "distributionCountries": [
+        "US"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:711957604570:function:76cc152c-b649-4550-a3db-3bb5a34c266e:Release_3"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

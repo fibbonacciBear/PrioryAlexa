@@ -2,7 +2,11 @@
 
 This is an Alexa skill that I made for my senior project at Woodside Priory High School. It allows the user to ask about calendar events such as the dates for certain events and the events for certain dates as well as the particular week schedule. The skill also allows the user to ask for random facts about Priory. 
 
-You can see my Weebly blog [here](https://prioryalexa.weebly.com/) and my project presentation [here](https://vimeo.com/423808312)
+The Weebly blog is [here](https://prioryalexa.weebly.com/)
+
+The Vimeo project presentation is [here](https://vimeo.com/423808312)
+
+The Google Slide presentation is [here](The Vimeo project presentation [here](https://vimeo.com/423808312)
 
 To create a zip file that can be uploaded to AWS Lambda:
 

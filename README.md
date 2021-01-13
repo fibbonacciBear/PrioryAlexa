@@ -6,7 +6,7 @@ The Weebly blog is [here](https://prioryalexa.weebly.com/)
 
 The Vimeo project presentation is [here](https://vimeo.com/423808312)
 
-The Google Slide presentation is [here](The Vimeo project presentation [here](https://vimeo.com/423808312)
+The Google Slide presentation is [here](https://docs.google.com/presentation/d/1rf4LoxhLhGhAM9bSLX26Bi012l6SDEAv6QBoSg8tZFM/edit?usp=sharing)
 
 To create a zip file that can be uploaded to AWS Lambda:
 
